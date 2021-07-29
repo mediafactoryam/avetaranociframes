@@ -5,7 +5,7 @@ mainContainer.height = am4core.percent(100);
 mainContainer.layout = "horizontal";
 
 let usData = [
-  { 'age': '0-ից 10', 'male': 84, 'female': 100 },
+  { 'age': '0-ից 10', 'male': 84, 'female': 101 },
   { 'age': '10-ից 20', 'male': 78, 'female': 84 },
   { 'age': '20-ից 30', 'male': 87, 'female': 100 },
   { 'age': '30-ից 40', 'male': 86, 'female': 79 },
