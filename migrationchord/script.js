@@ -88,10 +88,10 @@ const dataSource = {
 
 FusionCharts.ready(function () {
   const myChart = new FusionCharts({
-    type: "sankey",
+    type: "chord",
     renderAt: "chart-container",
     width: "100%",
-    height: "1000",
+    height: "490",
     dataFormat: "json",
     dataSource
   }).render();
