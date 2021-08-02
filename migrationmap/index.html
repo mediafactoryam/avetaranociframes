@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Avetaranoc Migration</title>
+    <link rel="stylesheet" href="./lib/leaflet.css" />
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        #event {
+            position: absolute;
+            top: 50px;
+            right: 600px;
+            height: 100px;
+            width: 400px;
+            z-index: 10000;
+        }
+
+        .btn {
+            border-color: gray;
+            border-width: 2px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="./lib/leaflet.js"></script>
+    <script src='./src/migration.layer.js'></script>
+    <script src='./src/script.js'></script>
+
+    <script>
+       
+    </script>
+</body>
+
+</html>
