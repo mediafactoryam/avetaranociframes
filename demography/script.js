@@ -1,4 +1,15 @@
+function hetqtheme(target) {
+  if (target instanceof am4core.ColorSet) {
+    target.list = [
+      am4core.color("#f1bf3c"),
+      am4core.color("black")
+    ];
+  }
+}
+
+
 am4core.useTheme(am4themes_animated);
+am4core.useTheme(hetqtheme);
 let mainContainer = am4core.create("chartdiv", am4core.Container);
 mainContainer.width = am4core.percent(100);
 mainContainer.height = am4core.percent(100);
@@ -69,7 +80,7 @@ let femaleSeries = femaleChart.series.push(new am4charts.ColumnSeries());
 femaleSeries.dataFields.valueX = "female";
 femaleSeries.dataFields.valueXShow = "percent";
 femaleSeries.calculatePercent = true;
-femaleSeries.fill = femaleChart.colors.getIndex(4);
+//femaleSeries.fill = femaleChart.colors.getIndex(4);
 femaleSeries.stroke = femaleSeries.fill;
 femaleSeries.columns.template.tooltipText = " {valueX} կին ({valueX.percent.formatNumber('#.0')}%)";
 femaleSeries.dataFields.categoryY = "age";
