@@ -74,13 +74,6 @@ a:hover {
   }
 }
 
-.flip-container,
-.front,
-.back {
-  /*! width: 25%; */
-  /*! height: 480px; */
-}
-
 /* flip speed goes here */
 .flipper {
   transition      : 0.6s;
@@ -110,6 +103,7 @@ a:hover {
   padding                    : 0px;
   /*! margin                 : 20px; */
   -webkit-perspective        : 0;
+  perspective                : 0;
   -webkit-backface-visibility: hidden;
   backface-visibility        : hidden;
   overflow                   : hidden;
@@ -222,9 +216,4 @@ p::-webkit-scrollbar-track {
 /* Handle */
 p::-webkit-scrollbar-thumb {
   background: #f1bf3c;
-}
-
-/* Handle on hover */
-p::-webkit-scrollbar-thumb:hover {
-  /* background: #555;  */
 }
