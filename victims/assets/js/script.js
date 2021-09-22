@@ -5,11 +5,13 @@ $(document).ready(function () {
       <p>${INFO.text}</p>
   </div>`).appendTo($(".with-title"));
   for (const { name, dateOfDeath, description, link, photo } of DATA) {
+    const linkHTML = (link) ? `<a href="${link}" target="_blank" >Կարդալ ավելին</a>` : "";
+    const imgHTML = (photo) ? `<img src="${photo}" alt="${name}" />` : "";
     $(`
     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 	    <div class="flipper">
 		    <div class="front">
-          <img src="${photo}" alt="${name}" />
+          ${imgHTML}
           <div>
             <h2>${name}</h2>
             <p>${dateOfDeath}</p>
@@ -17,7 +19,7 @@ $(document).ready(function () {
         </div>
         <div class="back">
           <p>${description}</p>
-          <a href="${link}" target="_blank" >Կարդալ ավելին</a>
+          ${linkHTML}
         </div>
       </div>
     </div>
